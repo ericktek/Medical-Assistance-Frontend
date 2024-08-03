@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
+.inter {
+  font-family: var(--font-inter);
+}
+
+.montserrat {
+  font-family: var(--font-montserrat);
+}
+
+.roboto {
+  font-family: var(--font-roboto);
+}
+
+.poppins {
+  font-family: var(--font-poppins);
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+     animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+     animation-duration: 4s;
+  }
+}
+
