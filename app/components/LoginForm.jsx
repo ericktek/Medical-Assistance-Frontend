@@ -31,13 +31,13 @@ const LoginPage = () => {
 
 
        <div className="">
-       <div className="relative w-full h-[30rem] overflow-hidden flex justify-center items-end">
-      <div className="bg-[#BEFAFF] w-[60rem] h-[30rem] rounded-t-full flex justify-center items-center">
-        <div className="bg-[#81D5DD] w-[57rem] h-[28rem] rounded-t-full flex justify-center items-center filter blur-lg">
-          <div className="bg-[#69CFD8] w-[52rem] h-[25rem] rounded-t-full blur"></div>
+       <div className="w-full h-[25rem] flex justify-center overflow-hidden">
+          <div className="bg-[#BEFAFF] w-[50rem] h-[25rem] rounded-t-full flex justify-center items-center">
+            <div className="bg-[#81D5DD] w-[47rem] h-[23.5rem] rounded-t-full flex justify-center items-center filter blur-lg">
+              <div className="bg-[#69CFD8] w-[42rem] h-[21rem] rounded-t-full blur"></div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
        </div>
       </div>
     </>
