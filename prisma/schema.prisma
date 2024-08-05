@@ -1,12 +1,15 @@
+// Define the MongoDB datasource using an environment variable for the URL
 datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
 }
- 
+
+// Generate the Prisma client
 generator client {
   provider = "prisma-client-js"
 }
- 
+
+// Define the User model with various fields, including a unique email and timestamps for creation and updates
 model User {
   id            String          @id @default(auto()) @map("_id") @db.ObjectId
   name          String?
@@ -21,7 +24,8 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
- 
+
+// Define the Account model to store authentication-related information with a relation to the User model
 model Account {
   id                String  @id @default(auto()) @map("_id") @db.ObjectId
   userId            String  @db.ObjectId
@@ -43,7 +47,8 @@ model Account {
  
   @@unique([provider, providerAccountId])
 }
- 
+
+// Define the Session model for storing session tokens with a relation to the User model
 model Session {
   id           String   @id @default(auto()) @map("_id") @db.ObjectId
   sessionToken String   @unique
@@ -54,7 +59,8 @@ model Session {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
- 
+
+// Define the VerificationToken model for storing verification tokens
 model VerificationToken {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
   identifier String
@@ -63,4 +69,3 @@ model VerificationToken {
  
   @@unique([identifier, token])
 }
- 

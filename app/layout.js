@@ -10,11 +10,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* The AuthProvider component provides authentication context to the children components */}
       <AuthProvider>
-      <body className={`${inter} ${roboto} ${poppins} ${montserrat}`}>
-        <main className="inter">{children}</main>
-      </body>
+        {/* Apply multiple font classes to the body element */}
+        <body className={`${inter} ${roboto} ${poppins} ${montserrat}`}>
+          {/* Render the children components inside the main element */}
+          <main className="inter">{children}</main>
+        </body>
       </AuthProvider>
     </html>
   );
 }
+
