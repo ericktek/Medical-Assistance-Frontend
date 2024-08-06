@@ -1,9 +1,12 @@
 import React from 'react'
+import RegisterForm from '@/app/components/RegisterForm'
 
-const page = () => {
+const LoginPage = () => {
   return (
-    <div>page</div>
+    <>
+    <RegisterForm />
+    </>
   )
 }
 
-export default page
+export default LoginPage
