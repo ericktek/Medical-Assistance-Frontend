@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -38,13 +39,13 @@ const Home = () => {
               </span>
             </div>
             <div className="flex space-x-4 sm:space-x-6 items-center">
-              <a href="/login" className="text-base text-gray-100 sm:text-lg font-medium hover:underline">Log in</a>
-              <a
+              <Link href="/login" className="text-base text-gray-100 sm:text-lg font-medium hover:underline">Log in</Link>
+              <Link
                 href="#"
                 className="text-base sm:text-lg md:text-xl font-semibold px-4 sm:px-6 py-1.5 md:py-2.5 rounded-full text-white bg-gradient-to-r from-emerald-400 to-indigo-400 transition duration-300 ease-in-out hover:from-indigo-400 hover:to-teal-400 hover:text-gray-200"
               >
                 Sign Up
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import AuthProvider from "@/context/AuthProvider";
 import "./globals.css";
 import { roboto, inter, poppins, montserrat } from "./utils/fonts";
@@ -10,15 +11,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* The AuthProvider component provides authentication context to the children components */}
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <AuthProvider>
-        {/* Apply multiple font classes to the body element */}
         <body className={`${inter} ${roboto} ${poppins} ${montserrat}`}>
-          {/* Render the children components inside the main element */}
           <main className="inter">{children}</main>
         </body>
       </AuthProvider>
     </html>
   );
 }
+
+
 
