@@ -9,27 +9,30 @@ const ForgotPasswordForm = () => {
       <div className="bg-gradient-to-r from-[#2FA0AB] via-[#6DD2DB] to-[#B2DCE2] relative min-h-screen flex flex-col items-center justify-center">
         {/* Card container */}
 
-        <div className="absolute backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] h-[80vh] w-[90%] sm:w-[560px] sm:h-[650px] md:w-[600px] md:h-[700px] lg:w-[550px] lg:h-[600px] rounded-2xl flex flex-col justify-center items-center mb-8 p-6 z-10 ">
+        <div className="absolute backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] w-auto h-auto rounded-2xl flex flex-col justify-center items-center mb-8 p-6 z-10 ">
           <div className="">
             <div className="flex flex-col justify-center items-center  space-y-6">
+
+                <Link href="/">
               <Image width={60} height={60} src={"/logo.png"} />
+                </Link>
               <h1 className="montserrat text-[#686868] font-medium text-[28px]">
                 Forgot Password
               </h1>
             </div>
-            <div className="mx-14">
+            <div className="px-2">
               <div className="flex justify-center items-center py-3">
                 <p className="flex mx-6 text-lg  montserrat text-[#565e5fd5] ">
                   Remember your password?{" "}
-                  <span className="text-[#3579F8] font-bold pl-2 hover:underline">
+                  <span className="text-[#3579F8] font-semibold pl-2 hover:underline">
                     {" "}
                     <Link href="/login"> Log in</Link>
                   </span>
                 </p>
               </div>
               <div className="m-4 ">
-                <div className="flex items-center relative">
-                  <span className="absolute right-0 px-2">
+                <div className="flex items-center relative z-50">
+                  <span className="absolute right-0 px-2  ">
                     <svg
                       width="25"
                       height="24"
@@ -49,7 +52,7 @@ const ForgotPasswordForm = () => {
 
                   <input
                     type="text"
-                    className="w-full h-9 text-gray-600  text-lg rounded-sm bg-transparent border-gray-400 py-6 px-3 outline outline-2 outline-slate-400 focus:border-blue-400"
+                    className="w-full h-9 text-gray-600 pr-10 text-lg rounded-sm bg-transparent border-gray-400 py-6 px-3 outline outline-2 outline-slate-400 focus:border-blue-400"
                     placeholder="Email"
                   />
                 </div>

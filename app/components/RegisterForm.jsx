@@ -12,7 +12,9 @@ const RegisterForm = () => {
         <div className="absolute backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] h-[80vh] w-[90%] sm:w-[560px] sm:h-[650px] md:w-[600px] md:h-[700px] lg:w-[550px] lg:h-[700px] rounded-2xl flex flex-col p-6 z-10 ">
           <div className="">
             <div className="flex flex-col justify-center items-center mt-12 space-y-6">
-              <Image width={60} height={60} src={"/logo.png"} />
+              <Link href="/">
+                <Image width={60} height={60} src={"/logo.png"} />
+              </Link>{" "}
               <h1 className="montserrat text-[#686868] font-medium text-[28px]">
                 Medical Assistance
               </h1>
@@ -32,15 +34,15 @@ const RegisterForm = () => {
                       d="M9.7777 11.8889C12.7845 11.8889 15.2221 9.45134 15.2221 6.44444C15.2221 3.43755 12.7845 1 9.7777 1C6.77081 1 4.33325 3.43756 4.33325 6.44444C4.33325 9.45133 6.77081 11.8889 9.7777 11.8889Z"
                       stroke="#96ACAF"
                       stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M1 22C1 22.5523 1.44772 23 2 23H17.5556C18.1078 23 18.5556 22.5523 18.5556 22C18.5556 17.1522 14.6256 13.2222 9.77778 13.2222C4.92995 13.2222 1 17.1522 1 22Z"
                       stroke="#96ACAF"
                       stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
