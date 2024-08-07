@@ -78,7 +78,7 @@ const ForgotPasswordForm = () => {
           <div>
             {/* Main container for the content, centered and padded */}
             <div className="max-w-3xl mx-auto px-6">
-              <div className="flex lg:mr-52 md:mr-52 lg:mt-40 justify-center ">
+              <div className="flex lg:mr-52 md:mr-52 lg:mt- justify-center ">
                 {/* Outer circle with inner blurred circle */}
                 <div className="bg-[#BEFAFF] w-24 h-24   rounded-full rotate-6 flex justify-center items-center ">
                   <span className="absolute z-10 flex justify-center items-center text-center">
