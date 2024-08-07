@@ -9,9 +9,9 @@ const LoginForm = () => {
       <div className="bg-gradient-to-r from-[#2FA0AB] via-[#6DD2DB] to-[#B2DCE2] relative min-h-screen flex flex-col items-center justify-center">
         {/* Card container */}
 
-        <div className="absolute py-4 backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] rounded-2xl flex flex-col z-10  mx-auto w-full max-w-[550px]">
-          <div className="p-5 py-8">
-            <div className="flex flex-col justify-center items-center space-y-6 mb-8">
+        <div className="absolute py-4 backdrop-blur-m lg:bg-gradient-to-t xl:bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] rounded-2xl flex flex-col z-10  mx-auto w-full max-w-[440px]">
+          <div className="p-5 py-2">
+            <div className="flex flex-col justify-center items-center space-y-3 mb-8">
               <Link href="/">
                 <Image
                   width={50}
@@ -20,15 +20,15 @@ const LoginForm = () => {
                   src={"/logo.png"}
                 />
               </Link>
-              <h1 className="montserrat text-[#6d6d6d] font-medium text-xl md:text-2xl">
+              <h1 className="montserrat lg:text-[#6d6d6d] bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent inline font-normal text-lg ">
                 Medical Assistance
               </h1>
             </div>
             <div>
-              <div className="space-y-5">
+              <div className="space-y-3">
                 <div className="w-full lg:px-9 xl:px-9">
                   <div className="flex justify-between items-center">
-                    <label className="text-gray-400">Email</label>
+                    <label className="lg:text-gray-400 xl:text-gray-400 text-blue-500">Email</label>
                     <svg
                       width="21"
                       height="21"
@@ -47,12 +47,12 @@ const LoginForm = () => {
                   </div>
                   <input
                     type="text"
-                    className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
+                    className="w-full h-9 text-lg text-gray-700 border-b-2 bg-transparent border-blue-500 lg:border-gray-400 xl:border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
                   />
                 </div>
                 <div className="w-full lg:px-9 xl:px-9">
                   <div className="flex justify-between items-center">
-                    <label className="text-gray-400">Password</label>
+                    <label className="lg:text-gray-400 xl:text-gray-400 text-blue-500">Password</label>
                     <svg
                       width="20"
                       height="20"
@@ -71,7 +71,7 @@ const LoginForm = () => {
                   </div>
                   <input
                     type="password"
-                    className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
+                    className="w-full h-9 text-lg text-gray-700 border-b-2 bg-transparent border-blue-500 lg:border-gray-400 xl:border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
                   />
                 </div>
                 <div className="w-full lg:px-9 xl:px-9">
@@ -140,14 +140,14 @@ const LoginForm = () => {
         <div className="w-full hidden md:block">
           <div>
             {/* Main container for the content, centered and padded */}
-            <div className="max-w-5xl mx-auto px-6">
-              <div className="flex lg:mr-72 md:mr-72 justify-center ">
+            <div className="max-w-4xl mx-auto px-6">
+              <div className="flex lg:mr-52 md:mr-52 lg:mt-14 justify-center ">
                 {/* Outer circle with inner blurred circle */}
-                <div className="bg-[#BEFAFF] w-28 h-28 rounded-full rotate-6 flex justify-center items-center ">
+                <div className="bg-[#BEFAFF] w-24 h-24   rounded-full rotate-6 flex justify-center items-center ">
                   <span className="absolute z-10 flex justify-center items-center text-center">
                     <svg
                       width="65"
-                      height="60"
+                      height="65"
                       viewBox="0 0 65 60"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -169,11 +169,11 @@ const LoginForm = () => {
               </div>
               <div>
                 {/* Another set of nested circles with blur effects */}
-                <div className="bg-[#BEFAFF] w-36 h-36 rounded-full flex justify-center items-center">
+                <div className="bg-[#BEFAFF] w-28 h-28 rounded-full flex justify-center items-center">
                   <span className="absolute z-10 flex justify-center items-center text-center">
-                    <Image width={75} height={75} src="/icons/DNA.png" />
+                    <Image width={60} height={60} src="/icons/DNA.png" />
                   </span>
-                  <div className="bg-[#81D5DD] w-28 h-28 rounded-full flex justify-center items-center filter blur-lg">
+                  <div className="bg-[#81D5DD] w-24 h-24 rounded-full flex justify-center items-center filter blur-lg">
                     <div className="bg-[#69CFD8] w-23 h-23 rounded-full blur"></div>
                   </div>
                 </div>
@@ -181,11 +181,11 @@ const LoginForm = () => {
 
               <div className="relative flex items-center justify-end mb-96">
                 {/* Another circular pattern with different dimensions */}
-                <div className="bg-[#BEFAFF] w-44 h-44 rounded-full flex justify-center items-center">
+                <div className="bg-[#BEFAFF] w-38 h-38 rounded-full flex justify-center items-center">
                   <span className="absolute z-10 flex justify-center items-center text-center">
                     <svg
                       width="70"
-                      height="90"
+                      height="70"
                       viewBox="0 0 90 112"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -196,8 +196,8 @@ const LoginForm = () => {
                       />
                     </svg>
                   </span>
-                  <div className="bg-[#81D5DD] w-36 h-36 rounded-full flex justify-center items-center filter blur-xl">
-                    <div className="bg-[#69CFD8] w-24 h-24 rounded-full blur"></div>
+                  <div className="bg-[#81D5DD] w-32 h-32 rounded-full flex justify-center items-center filter blur-xl">
+                    <div className="bg-[#69CFD8] w-20 h-20 rounded-full blur"></div>
                   </div>
                 </div>
               </div>
@@ -207,9 +207,9 @@ const LoginForm = () => {
 
         {/* Bottom section with a half-circle shape */}
         <div className="w-full absolute bottom-0 flex justify-center overflow-hidden">
-          <div className="bg-[#BEFAFF] w-[50rem] h-[25rem] rounded-t-full flex justify-center items-center">
-            <div className="bg-[#81D5DD] w-[47rem] h-[23.5rem] rounded-t-full flex justify-center items-center filter blur-lg">
-              <div className="bg-[#69CFD8] w-[42rem] h-[21rem] rounded-t-full blur"></div>
+          <div className="bg-[#BEFAFF] w-[40rem] h-[20rem] rounded-t-full flex justify-center items-center">
+            <div className="bg-[#81D5DD] w-[37rem] h-[18.5rem] rounded-t-full flex justify-center items-center filter blur-lg">
+              <div className="bg-[#69CFD8] w-[32rem] h-[16rem] rounded-t-full blur"></div>
             </div>
           </div>
         </div>
