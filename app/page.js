@@ -53,8 +53,8 @@ const Home = () => {
         {/* Main Body */}
         <div className="flex flex-col items-center justify-center text-center space-y-5 py-10 md:py-16 px-3 relative z-10">
           <h1 className="text-white font-extrabold mx-auto max-w-4xl text-3xl sm:text-4xl md:text-5xl">
-         Welcome to space;
-            <span className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 bg-clip-text text-transparent inline">
+         Welcome to 
+            <span className="bg-gradient-to-r pl-2 from-green-400 via-blue-500 to-purple-500 bg-clip-text text-transparent inline">
               Medikea
             </span>
             , your personal medical assistant and{" "}
