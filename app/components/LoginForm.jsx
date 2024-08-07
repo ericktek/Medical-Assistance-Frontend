@@ -9,23 +9,29 @@ const LoginForm = () => {
       <div className="bg-gradient-to-r from-[#2FA0AB] via-[#6DD2DB] to-[#B2DCE2] relative min-h-screen flex flex-col items-center justify-center">
         {/* Card container */}
 
-        <div className="absolute backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] rounded-2xl  flex flex-col z-10 lg:w-[500px] xl:w-[500px] md:w-[300px]">
-          <div className="p-3 py-8">
-            <div className="flex flex-col justify-center items-center space-y-6">
+        <div className="absolute py-4 backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] rounded-2xl flex flex-col z-10  mx-auto w-full max-w-[550px]">
+          <div className="p-5 py-8">
+            <div className="flex flex-col justify-center items-center space-y-6 mb-8">
               <Link href="/">
-                <Image width={60} height={60} className="w-12 h-12" src={"/logo.png"} />
-              </Link>{" "}
-              <h1 className="montserrat text-[#686868] font-medium text-base">
+                <Image
+                  width={50}
+                  height={50}
+                  className="w-12 h-12"
+                  src={"/logo.png"}
+                />
+              </Link>
+              <h1 className="montserrat text-[#6d6d6d] font-medium text-xl md:text-2xl">
                 Medical Assistance
               </h1>
             </div>
             <div>
-                <div className="m-6">
-                  <div className="flex justify-between">
-                    <label className="text-right text-gray-400">Email</label>{" "}
+              <div className="space-y-5">
+                <div className="w-full lg:px-9 xl:px-9">
+                  <div className="flex justify-between items-center">
+                    <label className="text-gray-400">Email</label>
                     <svg
-                      width="25"
-                      height="24"
+                      width="21"
+                      height="21"
                       viewBox="0 0 31 29"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -41,15 +47,15 @@ const LoginForm = () => {
                   </div>
                   <input
                     type="text"
-                    className="w-full h-9  text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
+                    className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
                   />
                 </div>
-                <div className="m-6 ">
-                  <div className="flex justify-between">
-                    <label className="text-right text-gray-400">Password</label>
+                <div className="w-full lg:px-9 xl:px-9">
+                  <div className="flex justify-between items-center">
+                    <label className="text-gray-400">Password</label>
                     <svg
-                      width="23"
-                      height="23"
+                      width="20"
+                      height="20"
                       viewBox="0 0 27 27"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -68,26 +74,25 @@ const LoginForm = () => {
                     className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
                   />
                 </div>
-                <Link href="/forgot-password">
-                  <p className="flex flex-col m-6 text-[#3579F8] text-end hover:underline">
-                    Forgot Password?
-                  </p>
-                </Link>
-                <div className="flex justify-center m-6 bg-[#3579F8] py-3 rounded-lg hover:bg-[#3579f8d0]">
-                  <Link href="">
-                    <h1 className="poppins text-[20px] font-[600] text-white">
-                      SIGN IN
-                    </h1>
+                <div className="w-full lg:px-9 xl:px-9">
+                  <Link href="/forgot-password">
+                    <p className="text-[#3579F8] text-end hover:underline">
+                      Forgot Password?
+                    </p>
                   </Link>
+                </div>
+                <div className="flex justify-center lg:mx-9 xl:mx-9 bg-[#3579F8] py-2 rounded-lg hover:bg-[#3579f8d0]">
+                  <button className="poppins text-[20px] font-[600] text-white">
+                    SIGN IN
+                  </button>
                 </div>
                 <div className="flex items-center text-gray-400 justify-center">
                   <span className="w-20 border-t-2 border-gray-400"></span>
                   <h1 className="mx-4 text-sm font-semibold">OR</h1>
                   <span className="w-20 border-t-2 border-gray-400"></span>
                 </div>
-
-                <div className="flex justify-center m-6 bg-white hover:bg-[#ffffffbd] py-4 rounded-lg space-x-3 ">
-                  <Link className="flex space-x-3" href="">
+                <div className="flex justify-center lg:mx-9 xl:mx-9 bg-white hover:bg-[#ffffffbd] py-3 rounded-lg">
+                  <h2 className="flex space-x-3 items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -113,20 +118,20 @@ const LoginForm = () => {
                         d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
                       ></path>
                     </svg>
-                    <h1 className="poppins text-md font-medium text-[#768385d5]">
+                    
+                    <span className="poppins text-md font-medium text-[#768385d5]">
                       Continue with Google
-                    </h1>
-                  </Link>
+                    </span>
+                  </h2>
                 </div>
-
                 <div className="flex justify-center items-center">
-                  <p className="flex mx-6 text-[#565e5fd5] ">
+                  <p className="text-base text-[#565e5fd5]">
                     Don't have an account?{" "}
                     <span className="text-[#3579F8] font-bold pl-2 hover:underline">
-                      {" "}
-                      <Link href="/register"> Sign Up </Link>
+                      <Link href="/register">Sign Up</Link>
                     </span>
                   </p>
+                </div>
               </div>
             </div>
           </div>

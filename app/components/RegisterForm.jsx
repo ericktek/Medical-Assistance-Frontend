@@ -9,145 +9,112 @@ const RegisterForm = () => {
       <div className="bg-gradient-to-r from-[#2FA0AB] via-[#6DD2DB] to-[#B2DCE2] relative min-h-screen flex flex-col items-center justify-center">
         {/* Card container */}
 
-        <div className="absolute backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] h-[80vh] w-[90%] sm:w-[560px] sm:h-[650px] md:w-[600px] md:h-[700px] lg:w-[550px] lg:h-[700px] rounded-2xl flex flex-col p-6 z-10 ">
-          <div className="">
-            <div className="flex flex-col justify-center items-center mt-12 space-y-6">
-              <Link href="/">
-                <Image width={60} height={60} src={"/logo.png"} />
-              </Link>{" "}
-              <h1 className="montserrat text-[#686868] font-medium text-[28px]">
-                Medical Assistance
-              </h1>
-            </div>
-            <div className="mx-14">
-              <div className="m-6 ">
-                <div className="flex justify-between">
-                  <label className="text-right text-gray-400">Username</label>{" "}
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9.7777 11.8889C12.7845 11.8889 15.2221 9.45134 15.2221 6.44444C15.2221 3.43755 12.7845 1 9.7777 1C6.77081 1 4.33325 3.43756 4.33325 6.44444C4.33325 9.45133 6.77081 11.8889 9.7777 11.8889Z"
-                      stroke="#96ACAF"
-                      stroke-width="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M1 22C1 22.5523 1.44772 23 2 23H17.5556C18.1078 23 18.5556 22.5523 18.5556 22C18.5556 17.1522 14.6256 13.2222 9.77778 13.2222C4.92995 13.2222 1 17.1522 1 22Z"
-                      stroke="#96ACAF"
-                      stroke-width="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-                <input
-                  type="text"
-                  className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
-                />
-              </div>
-              <div className="m-6 ">
-                <div className="flex justify-between">
-                  <label className="text-right text-gray-400">Email</label>{" "}
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 31 29"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M27.6357 7.25C27.6357 5.92084 26.5437 4.83334 25.209 4.83334H5.79511C4.46041 4.83334 3.36838 5.92084 3.36838 7.25M27.6357 7.25V21.75C27.6357 23.0792 26.5437 24.1667 25.209 24.1667H5.79511C4.46041 24.1667 3.36838 23.0792 3.36838 21.75V7.25M27.6357 7.25L15.5021 15.7083L3.36838 7.25"
-                      stroke="#90A2A5"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-                <input
-                  type="text"
-                  className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
-                />
-              </div>
-
-              <div className="m-6 ">
-                <div className="flex justify-between">
-                  <label className="text-right text-gray-400">Password</label>
-                  <svg
-                    width="23"
-                    height="23"
-                    viewBox="0 0 27 27"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20.2166 20.1825C18.2855 21.6484 15.9341 22.4605 13.5063 22.5C5.59846 22.5 1.07971 13.5 1.07971 13.5C2.48492 10.8921 4.43391 8.61368 6.79593 6.8175M11.1339 4.77C11.9115 4.58874 12.7077 4.49813 13.5063 4.5C21.4141 4.5 25.9328 13.5 25.9328 13.5C25.2471 14.7776 24.4293 15.9803 23.4927 17.0887M15.9012 15.885C15.5909 16.2166 15.2168 16.4826 14.8011 16.667C14.3853 16.8515 13.9366 16.9507 13.4815 16.9587C13.0265 16.9667 12.5745 16.8833 12.1525 16.7136C11.7305 16.5438 11.3471 16.2912 11.0253 15.9707C10.7035 15.6502 10.4498 15.2684 10.2793 14.8482C10.1089 14.4279 10.0252 13.9778 10.0332 13.5246C10.0412 13.0715 10.1408 12.6246 10.3261 12.2106C10.5113 11.7966 10.7784 11.424 11.1113 11.115M1.07971 1.125L25.9328 25.875"
-                      stroke="#8C999B"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-                <input
-                  type="password"
-                  className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
-                />
-              </div>
-              <div className="m-6 ">
-                <div className="flex justify-between">
-                  <label className="text-right text-gray-400">
-                    {" "}
-                    Confirm Password
-                  </label>
-                  <svg
-                    width="23"
-                    height="23"
-                    viewBox="0 0 27 27"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20.2166 20.1825C18.2855 21.6484 15.9341 22.4605 13.5063 22.5C5.59846 22.5 1.07971 13.5 1.07971 13.5C2.48492 10.8921 4.43391 8.61368 6.79593 6.8175M11.1339 4.77C11.9115 4.58874 12.7077 4.49813 13.5063 4.5C21.4141 4.5 25.9328 13.5 25.9328 13.5C25.2471 14.7776 24.4293 15.9803 23.4927 17.0887M15.9012 15.885C15.5909 16.2166 15.2168 16.4826 14.8011 16.667C14.3853 16.8515 13.9366 16.9507 13.4815 16.9587C13.0265 16.9667 12.5745 16.8833 12.1525 16.7136C11.7305 16.5438 11.3471 16.2912 11.0253 15.9707C10.7035 15.6502 10.4498 15.2684 10.2793 14.8482C10.1089 14.4279 10.0252 13.9778 10.0332 13.5246C10.0412 13.0715 10.1408 12.6246 10.3261 12.2106C10.5113 11.7966 10.7784 11.424 11.1113 11.115M1.07971 1.125L25.9328 25.875"
-                      stroke="#8C999B"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-                <input
-                  type="password"
-                  className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 flex-1 py-3 outline-none focus:border-blue-400"
-                />
-              </div>
-
-              <div className="flex justify-center m-6 bg-[#3579F8] py-3 rounded-lg hover:bg-[#3579f8d0]">
-                <Link href="">
-                  <h1 className="poppins text-[20px] font-[600] text-white">
-                    SIGN UP
-                  </h1>
-                </Link>
-              </div>
-
-              <div className="flex justify-center items-center">
-                <p className="flex mx-6 text-[#565e5fd5] ">
-                  Already have an account?{" "}
-                  <span className="text-[#3579F8] font-bold pl-2 hover:underline">
-                    {" "}
-                    <Link href="/login"> Log in</Link>
-                  </span>
-                </p>
-              </div>
-            </div>
+        <div className="absolute backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7]  w-[90%] sm:w-[560px]  lg:w-[550px]  rounded-2xl flex py-8 flex-col z-10">
+        <div className="flex flex-col justify-center items-center space-y-6 ">
+            <Link href="/">
+              <Image width={50} height={50} className="w-12 h-12" src={"/logo.png"} />
+            </Link>
+            <h1 className="montserrat text-[#6d6d6d] font-medium text-xl lg:text-2xl xl:text-2xl">Medical Assistance</h1>
           </div>
+      <div className="">
+        <div className="m-6 px-6 mx-0 lg:px-14 ">
+          <div className="flex justify-between items-center">
+            <label className="text-gray-400">Username</label>
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.7777 11.8889C12.7845 11.8889 15.2221 9.45134 15.2221 6.44444C15.2221 3.43755 12.7845 1 9.7777 1C6.77081 1 4.33325 3.43756 4.33325 6.44444C4.33325 9.45133 6.77081 11.8889 9.7777 11.8889Z"
+                stroke="#96ACAF"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M1 22C1 22.5523 1.44772 23 2 23H17.5556C18.1078 23 18.5556 22.5523 18.5556 22C18.5556 17.1522 14.6256 13.2222 9.77778 13.2222C4.92995 13.2222 1 17.1522 1 22Z"
+                stroke="#96ACAF"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <input
+            type="text"
+            className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 py-3 outline-none focus:border-blue-400"
+            // placeholder="Username"
+          />
         </div>
+        <div className="m-6 px-6 mx-0 lg:px-14 ">
+          <div className="flex justify-between items-center">
+            <label className="text-gray-400">Email</label>
+            <svg width="25" height="24" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.6357 7.25C27.6357 5.92084 26.5437 4.83334 25.209 4.83334H5.79511C4.46041 4.83334 3.36838 5.92084 3.36838 7.25M27.6357 7.25V21.75C27.6357 23.0792 26.5437 24.1667 25.209 24.1667H5.79511C4.46041 24.1667 3.36838 23.0792 3.36838 21.75V7.25M27.6357 7.25L15.5021 15.7083L3.36838 7.25"
+                stroke="#90A2A5"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <input
+            type="email"
+            className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 py-3 outline-none focus:border-blue-400"
+            // placeholder="Email"
+          />
+        </div>
+        <div className="m-6 px-6 mx-0 lg:px-14 ">
+          <div className="flex justify-between items-center">
+            <label className="text-gray-400">Password</label>
+            <svg width="23" height="23" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.2166 20.1825C18.2855 21.6484 15.9341 22.4605 13.5063 22.5C5.59846 22.5 1.07971 13.5 1.07971 13.5C2.48492 10.8921 4.43391 8.61368 6.79593 6.8175M11.1339 4.77C11.9115 4.58874 12.7077 4.49813 13.5063 4.5C21.4141 4.5 25.9328 13.5 25.9328 13.5C25.2471 14.7776 24.4293 15.9803 23.4927 17.0887M15.9012 15.885C15.5909 16.2166 15.2168 16.4826 14.8011 16.667C14.3853 16.8515 13.9366 16.9507 13.4815 16.9587C13.0265 16.9667 12.5745 16.8833 12.1525 16.7136C11.7305 16.5438 11.3471 16.2912 11.0253 15.9707C10.7035 15.6502 10.4498 15.2684 10.2793 14.8482C10.1089 14.4279 10.0252 13.9778 10.0332 13.5246C10.0412 13.0715 10.1408 12.6246 10.3261 12.2106C10.5113 11.7966 10.7784 11.424 11.1113 11.115M1.07971 1.125L25.9328 25.875"
+                stroke="#8C999B"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <input
+            type="password"
+            className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 py-3 outline-none focus:border-blue-400"
+            // placeholder="Password"
+          />
+        </div>
+        <div className="m-6 px-6 mx-0 lg:px-14 mb-8">
+          <div className="flex justify-between items-center">
+            <label className="text-gray-400">Confirm Password</label>
+            <svg width="23" height="23" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.2166 20.1825C18.2855 21.6484 15.9341 22.4605 13.5063 22.5C5.59846 22.5 1.07971 13.5 1.07971 13.5C2.48492 10.8921 4.43391 8.61368 6.79593 6.8175M11.1339 4.77C11.9115 4.58874 12.7077 4.49813 13.5063 4.5C21.4141 4.5 25.9328 13.5 25.9328 13.5C25.2471 14.7776 24.4293 15.9803 23.4927 17.0887M15.9012 15.885C15.5909 16.2166 15.2168 16.4826 14.8011 16.667C14.3853 16.8515 13.9366 16.9507 13.4815 16.9587C13.0265 16.9667 12.5745 16.8833 12.1525 16.7136C11.7305 16.5438 11.3471 16.2912 11.0253 15.9707C10.7035 15.6502 10.4498 15.2684 10.2793 14.8482C10.1089 14.4279 10.0252 13.9778 10.0332 13.5246C10.0412 13.0715 10.1408 12.6246 10.3261 12.2106C10.5113 11.7966 10.7784 11.424 11.1113 11.115M1.07971 1.125L25.9328 25.875"
+                stroke="#8C999B"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <input
+            type="password"
+            className="w-full h-9 text-lg text-gray-600 border-b-2 bg-transparent border-gray-400 py-3 outline-none focus:border-blue-400"
+            // placeholder="Confirm Password"
+          />
+        </div>
+        <div className="flex justify-center mx-4  md:mx-10 lg:mx-[53px] xl:mx-[53px] bg-[#3579F8] py-3 rounded-lg hover:bg-[#3579f8d0]">
+          <Link href="">
+            <h1 className="poppins text-[20px] font-[600] text-white">SIGN UP</h1>
+          </Link>
+        </div>
+        <div className="flex justify-center items-center mt-4">
+          <p className="text-[#565e5fd5]">
+            Already have an account?{" "}
+            <span className="text-[#3579F8] font-bold pl-2 hover:underline">
+              <Link href="/login">Log in</Link>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
 
         <div className="w-full hidden md:block">
           <div>

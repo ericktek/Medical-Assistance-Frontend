@@ -9,65 +9,74 @@ const ForgotPasswordForm = () => {
       <div className="bg-gradient-to-r from-[#2FA0AB] via-[#6DD2DB] to-[#B2DCE2] relative min-h-screen flex flex-col items-center justify-center">
         {/* Card container */}
 
-        <div className="absolute backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] w-auto h-auto rounded-2xl flex flex-col justify-center items-center mb-8 p-6 z-10 ">
-          <div className="">
-            <div className="flex flex-col justify-center items-center  space-y-6">
+        <div className="absolute flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 z-10 ">
+  <div className="sm:mx-auto sm:w-full sm:max-w-sm py-6 px-2 backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] rounded-2xl">
+    {/* Heading */}
+    <div className="flex flex-col justify-center items-center space-y-6 ">
+      <Link href="/">
+        <Image width={50} height={50} src={"/logo.png"} />
+      </Link>
+      <h1 className="montserrat text-[#686868] font-medium text-2xl lg:text-[28px] xl:text-[28px]">
+        Forgot Password
+      </h1>
+    </div>
+    <div className="flex justify-center items-center py-3">
+          <p className="flex text-sm lg:text-base xl:text-base md:text-base montserrat text-[#565e5fd5]">
+            Remember your password?{" "}
+            <span className="text-[#3579F8] font-semibold pl-2 hover:underline">
+              {" "}
+              <Link href="/login"> Log in</Link>
+            </span>
+          </p>
+        </div>
 
-                <Link href="/">
-              <Image width={60} height={60} src={"/logo.png"} />
-                </Link>
-              <h1 className="montserrat text-[#686868] font-medium text-[28px]">
-                Forgot Password
-              </h1>
-            </div>
-            <div className="px-2">
-              <div className="flex justify-center items-center py-3">
-                <p className="flex mx-6 text-lg  montserrat text-[#565e5fd5] ">
-                  Remember your password?{" "}
-                  <span className="text-[#3579F8] font-semibold pl-2 hover:underline">
-                    {" "}
-                    <Link href="/login"> Log in</Link>
-                  </span>
-                </p>
-              </div>
-              <div className="m-4 ">
-                <div className="flex items-center relative z-50">
-                  <span className="absolute right-0 px-2  ">
-                    <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 31 29"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M27.6357 7.25C27.6357 5.92084 26.5437 4.83334 25.209 4.83334H5.79511C4.46041 4.83334 3.36838 5.92084 3.36838 7.25M27.6357 7.25V21.75C27.6357 23.0792 26.5437 24.1667 25.209 24.1667H5.79511C4.46041 24.1667 3.36838 23.0792 3.36838 21.75V7.25M27.6357 7.25L15.5021 15.7083L3.36838 7.25"
-                        stroke="#90A2A5"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
+    <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+      <form className="space-y-6">
+        <div className="m-4">
+          <div className="flex items-center relative z-50 ">
+            <span className="absolute right-0 px-2">
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 31 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.6357 7.25C27.6357 5.92084 26.5437 4.83334 25.209 4.83334H5.79511C4.46041 4.83334 3.36838 5.92084 3.36838 7.25M27.6357 7.25V21.75C27.6357 23.0792 26.5437 24.1667 25.209 24.1667H5.79511C4.46041 24.1667 3.36838 23.0792 3.36838 21.75V7.25M27.6357 7.25L15.5021 15.7083L3.36838 7.25"
+                  stroke="#90A2A5"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
 
-                  <input
-                    type="text"
-                    className="w-full h-9 text-gray-600 pr-10 text-lg rounded-sm bg-transparent border-gray-400 py-6 px-3 outline outline-2 outline-slate-400 focus:border-blue-400"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
-
-              <div className="flex justify-center m-4 mt-8 bg-[#3579F8] py-3 rounded-lg hover:bg-[#3579f8d0]">
-                <Link href="">
-                  <h1 className="poppins text-[18px] font-[550] text-white">
-                    RESET PASSWORD
-                  </h1>
-                </Link>
-              </div>
-            </div>
+            <input
+              className="w-full px-3 py-3 font-sans text-xl text-gray-600 font-normal transition-all bg-transparent border rounded-md peer border-gray-400 border-t-transparent outline-none placeholder-shown:border-gray-400 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-gray-50"
+              placeholder=" "
+            />
+            <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none truncate text-[11px] font-normal leading-tight text-gray-500 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-gray-400 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-gray-400 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-gray-400 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-blue-500 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-blue-500 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-blue-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-gray-400"
+            >
+              Email
+            </label>
           </div>
         </div>
+
+        <div className="flex justify-center m-4 mt-8 bg-[#3579F8] py-3 rounded-lg hover:bg-[#3579f8d0]">
+          <Link href="">
+            <h1 className="poppins text-[18px] font-[550] text-white">
+              RESET PASSWORD
+            </h1>
+          </Link>
+        </div>
+
+       
+      </form>
+    </div>
+  </div>
+</div>
+
 
         <div className="w-full hidden md:block">
           <div>
