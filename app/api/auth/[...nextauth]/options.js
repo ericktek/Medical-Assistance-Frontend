@@ -73,4 +73,8 @@ export const options = {
   session: {
     strategy: "jwt",
   },
+
+  pages: {
+    signIn: "/login", 
+  },
 };

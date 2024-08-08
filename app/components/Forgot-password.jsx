@@ -9,12 +9,12 @@ const ForgotPasswordForm = () => {
       <div className="bg-gradient-to-r from-[#2FA0AB] via-[#6DD2DB] to-[#B2DCE2] relative min-h-screen flex flex-col items-center justify-center">
         {/* Card container */}
 
-        <div className="absolute flex min-h-full flex-col justify-center px-6 py-16 lg:px-14 z-10 w-[800px]">
+        <div className="absolute flex min-h-full flex-col justify-center px-6 py-16 lg:px-14 z-10 mx-auto lg:w-[800px]">
           <div className="sm:mx-auto sm:w-full max-w-md py-12 px-2 backdrop-blur-sm bg-gradient-to-t from-[#bbf3f8e5] to-[#ffffffc7] rounded-2xl">
             {/* Heading */}
             <div className="flex flex-col justify-center items-center space-y-8 ">
               <Link href="/">
-                <Image width={50} height={50} src={"/logo.png"} />
+                <Image alt="logo" width={50} height={50} src={"/logo.png"} />
               </Link>
               <h1 className="montserrat text-[#686868] font-medium text-2xl lg:text-[28px] xl:text-[28px]">
                 Forgot Password
@@ -74,11 +74,11 @@ const ForgotPasswordForm = () => {
           </div>
         </div>
 
-        <div className="w-full hidden md:block">
+        <div className="w-full hidden md:block mt-20">
           <div>
             {/* Main container for the content, centered and padded */}
             <div className="max-w-3xl mx-auto px-6">
-              <div className="flex lg:mr-52 md:mr-52 lg:mt- justify-center ">
+              <div className="flex items-center justify-center ">
                 {/* Outer circle with inner blurred circle */}
                 <div className="bg-[#BEFAFF] w-24 h-24   rounded-full rotate-6 flex justify-center items-center ">
                   <span className="absolute z-10 flex justify-center items-center text-center">
@@ -108,7 +108,7 @@ const ForgotPasswordForm = () => {
                 {/* Another set of nested circles with blur effects */}
                 <div className="bg-[#BEFAFF] w-28 h-28 rounded-full flex justify-center items-center">
                   <span className="absolute z-10 flex justify-center items-center text-center">
-                    <Image width={60} height={60} src="/icons/DNA.png" />
+                    <Image alt="dna icon" width={60} height={60} src="/icons/DNA.png" />
                   </span>
                   <div className="bg-[#81D5DD] w-24 h-24 rounded-full flex justify-center items-center filter blur-lg">
                     <div className="bg-[#69CFD8] w-23 h-23 rounded-full blur"></div>
@@ -144,9 +144,9 @@ const ForgotPasswordForm = () => {
 
         {/* Bottom section with a half-circle shape */}
         <div className="w-full absolute bottom-0 flex justify-center overflow-hidden">
-          <div className="bg-[#BEFAFF] w-[40rem] h-[20rem] rounded-t-full flex justify-center items-center">
-            <div className="bg-[#81D5DD] w-[37rem] h-[18.5rem] rounded-t-full flex justify-center items-center filter blur-lg">
-              <div className="bg-[#69CFD8] w-[32rem] h-[16rem] rounded-t-full blur"></div>
+          <div className="bg-[#BEFAFF] w-[40rem] h-[20rem] rounded-t-full overflow-hidden flex justify-center items-end">
+            <div className="bg-[#81D5DD] w-[37rem] h-[18.5rem] rounded-t-full overflow-hidden flex justify-center items-end filter blur-lg">
+              <div className="bg-[#69CFD8] w-[32rem] h-[16rem] rounded-t-full"></div>
             </div>
           </div>
         </div>
